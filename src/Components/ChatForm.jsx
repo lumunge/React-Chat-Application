@@ -2,14 +2,14 @@ import { useState } from "react";
 import { sendMessage, isTyping } from "react-chat-engine";
 
 const ChatForm = (props) => {
-	const { chatId, creds } = props;
-
 	const [msg, setMsg] = useState("");
+
+    const { chatId, creds } = props;
 
 	const sendMsg = (e) => {
 		e.preventDefault();
-		const message = msg.trim();
-		if (message.length > 0) sendMessage(creds, chatId, { message });
+		const text = msg.trim();
+		if (text.length > 0) sendMessage(creds, chatId, { text });
 		setMsg("");
 	};
     
