@@ -46,13 +46,16 @@ button:hover {
 	padding: 1rem 0;
 	font-size: 1.3rem;
 	font-weight: bold;
+	color: #fff;
 }
 .chat-subtitle {
 	margin-left: 18px;
 	padding-bottom: 1rem;
+	color: #58d68d;
 }
 .users {
 	padding: 0 2px;
+	color: #fff;
 }
 
 /* chat form styling */
@@ -96,7 +99,30 @@ button:hover {
 	height: 100%;
 	width: 100%;
 	overflow: scroll;
-	background: #b2babb;
+	background-image: radial-gradient(
+			circle at center center,
+			transparent,
+			rgb(33, 33, 33)
+		),
+		repeating-linear-gradient(
+			135deg,
+			rgb(33, 33, 33) 0px,
+			rgb(33, 33, 33) 2px,
+			transparent 2px,
+			transparent 10px,
+			rgb(33, 33, 33) 10px,
+			rgb(33, 33, 33) 11px,
+			transparent 11px,
+			transparent 21px
+		),
+		repeating-linear-gradient(
+			45deg,
+			rgb(47, 47, 47) 0px,
+			rgb(47, 47, 47) 4px,
+			transparent 4px,
+			transparent 8px
+		),
+		linear-gradient(90deg, rgb(33, 33, 33), rgb(33, 33, 33));
 }
 .msg-row {
 	float: left;
