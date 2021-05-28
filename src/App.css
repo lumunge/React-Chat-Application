@@ -48,31 +48,50 @@ button:hover {
 	font-weight: bold;
 }
 .chat-subtitle {
+	margin-left: 18px;
 	padding-bottom: 1rem;
 }
 .users {
 	padding: 0 2px;
 }
 
-/* message form styling */
+/* chat form styling */
 .msgForm {
-	display: flex;
 	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 .msgForm form {
 	width: 100%;
 	display: flex;
 	align-items: center;
+	padding: 2rem;
 }
-form .input {
-	width: 70%;
+.msgForm form input[type="text"] {
+	width: 90%;
+	height: 50px;
 }
-form .button {
-	width: 30%;
+.msgForm form .submit-btn {
+	width: 10%;
+	height: 48px;
+	margin-left: -2px;
+	font-size: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: -5px;
+	background: #fff;
+	border: none;
+	border-radius: 0px 5px 5px 0px;
 }
+.upload-icon {
+	position: relative;
+	font-size: 14px;
+	margin-left: -25px;
+	font-size: 1.5rem;
+}
+.upload-icon:hover {
+	cursor: pointer;
+}
+
 .chat-feed {
 	height: 100%;
 	width: 100%;
@@ -97,9 +116,26 @@ form .button {
 	background: #fff;
 	float: left;
 	color: #000;
+	margin-left: 18px;
 }
 .my-msg {
 	background: #58d68d;
 	float: right;
 	margin-right: 18px;
+}
+.msg-img {
+	float: right;
+	max-height: 300px;
+	max-width: 300px;
+	min-height: 100px;
+	min-height: 100px;
+	padding-right: 18px;
+}
+.msg-img-usr {
+	float: left;
+	max-height: 300px;
+	max-width: 300px;
+	min-height: 100px;
+	min-height: 100px;
+	padding-right: 18px;
 }
