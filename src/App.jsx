@@ -1,4 +1,5 @@
 import {ChatEngine} from 'react-chat-engine';
+import {FaPowerOff} from 'react-icons/fa';
 import ChatFeed from './Components/ChatFeed'
 import LoginForm from './Components/LoginForm';
 import "./App.css";
@@ -17,13 +18,12 @@ const App = () => {
         <>
         <ChatEngine
 			projectID="eb281dc6-eb04-4563-87b1-6500d82f2c79"
-            height="90vh"
+            height="99vh"
             userName={localStorage.getItem("username")}
             userSecret={localStorage.getItem("password")}
             renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps}/>}
-
 		/> 
-        <button className="logout" onClick={LogOut}>Log out</button>
+        <button className="logout" onClick={LogOut}><abbr title="log-out"><FaPowerOff/></abbr></button>
         </>
             
     )
