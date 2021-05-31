@@ -33,8 +33,8 @@ const LoginForm = () => {
 
 	return (
 		<div className="login-form">
-			<h4>Enter details to start Chat</h4>
 			<form onSubmit={handleSubmit}>
+			<h4>Enter details to start Chat</h4>
 				<div className="input-container">
 					<input
 						type="text"

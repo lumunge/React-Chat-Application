@@ -13,6 +13,11 @@
 	padding: 10rem 0;
 	text-align: center;
 }
+.login-form form {
+	background: #58d68d;
+	color: #fff;
+	padding: 2rem;
+}
 .input-container {
 	padding: 1rem 0;
 }
