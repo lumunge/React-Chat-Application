@@ -1,7 +1,6 @@
 import {ChatEngine} from 'react-chat-engine';
 import {FaPowerOff} from 'react-icons/fa';
 import ChatFeed from './Components/ChatFeed'
-import ChatList from './Components/ChatList/ChatList';
 import LoginForm from './Components/LoginForm';
 import "./App.css";
 
@@ -23,7 +22,6 @@ const App = () => {
             userName={localStorage.getItem("username")}
             userSecret={localStorage.getItem("password")}
             renderChatFeed={(ChatFeedProps) => <ChatFeed {...ChatFeedProps}/>}
-            renderChatList={(ChatListProps) => <ChatList {...ChatListProps}/>}
 		/> 
         <button className="logout" onClick={LogOut}><abbr title="log-out"><FaPowerOff/></abbr></button>
         </>

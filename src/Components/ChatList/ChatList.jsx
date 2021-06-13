@@ -5,7 +5,6 @@ import './ChatListStyles.css';
 const ChatList = (props) => {
     if(!props) return <p>Loading list</p>
     const list = Object.values(props.chats);
-    // console.log(list);
 
 
     return(
